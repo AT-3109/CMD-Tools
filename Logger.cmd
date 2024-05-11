@@ -1,13 +1,17 @@
+::setup
+@echo off
+color 02
+title Logger
+
+::screen text
+echo Start logging?
 pause
+cls
+
+::log process
 mkdir output
-cls
 cd output
-cls
 ipconfig /all >> hardware.txt
-cls
 systeminfo >> hardware.txt
-cls
 netstat /a >> connections.txt
-cls
 tasklist >> processes.txt
-cls
